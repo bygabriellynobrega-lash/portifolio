@@ -30,7 +30,7 @@
 
 /* ---------- RESET ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; }
 html, body { margin: 0; padding: 0; }
 
 body {
@@ -1585,6 +1585,9 @@ footer {
     grid-row: span 1;
   }
   .gphoto--1 { grid-column: span 2; grid-row: span 2; }
+
+  /* Fecha o grid: 1 (span2) + 6 (span1) + 1 (span2) = 4 linhas cheias, sem vazio */
+  .gphoto--8 { grid-column: span 2; grid-row: span 1; }
 
   .col-card h3 { font-size: 36px; }
   .foot-grid { grid-template-columns: 1fr; gap: 32px; }
